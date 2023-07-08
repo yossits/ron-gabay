@@ -1,6 +1,8 @@
 import React from "react";
-import AboutUsIntro from "@/components/AboutUsIntro";
+import Header from "@/components/Header";
 import AboutUsMainContent from "@/components/AboutUsMainContent";
+
+import AboutImage from "@/public/images/about.jpeg";
 
 export const metadata = {
   title: "About Me",
@@ -11,7 +13,7 @@ export const metadata = {
 const About = () => {
   return (
     <main>
-      <AboutUsIntro />
+      <Header image={AboutImage} alt={"About us"} title={"אודותיי"} />
       <AboutUsMainContent />
     </main>
   );

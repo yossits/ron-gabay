@@ -1,15 +1,17 @@
 "use client";
 import React from "react";
 import { Container, Box } from "@mui/material";
+
 import Image from "next/image";
 import bgImg from "../public/images/untitled-91.JPG";
+
 import styles from "@/styles/mainPage.module.css";
 
 const Intro = () => {
   return (
     <div style={{ flexGrow: 1 }}>
       <Container maxWidth={false} disableGutters>
-        <Image className={styles.image} src={bgImg} alt="Your alt text" />
+        <Image className={styles.image} src={bgImg} alt="backgroung image - ron gabay playing" />
         <Box
           display="flex"
           flexDirection="column"

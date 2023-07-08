@@ -3,7 +3,7 @@ import React from "react";
 import { Grid, Container, Typography, Button } from "@mui/material";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import ronAboutImage from "@/public/images/ron-5a.jpeg";
+import ronAboutImage from "@/public/images/ron-5.jpeg";
 import styles from "@/styles/aboutUs.module.css";
 
 const AboutUsMainContent = () => {
@@ -22,10 +22,8 @@ const AboutUsMainContent = () => {
           md={6}
         >
           <Image
-            sx={{ width: "100%" }}
+            className={styles.imageMainContent}
             src={ronAboutImage}
-            width={430}
-            height={650}
             alt="Descriptive alt text"
           />
         </Grid>

@@ -14,6 +14,8 @@
     width: 100%;
     height: auto;
     border-bottom: 5px solid rgb(54, 137, 148);
+    height: 30vh;
+    object-fit: cover;
 }
 
 .title {
@@ -25,6 +27,12 @@
     font-size: 6em;
     width: 70%;
     text-align: left;
+}
+
+.imageMainContent {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
 }
 
 @media (max-width: 780px) {
