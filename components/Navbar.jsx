@@ -1,5 +1,5 @@
 "use client";
-import * as React from "react";
+import React, { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -12,17 +12,18 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Image from "next/image";
+import styles from "@/styles/globals.module.css";
 
 import logo from "@/public/images/logo.png";
 
 const pages = [
-  { name: "home", link: "/" },
-  { name: "contact me", link: "/contact" },
-  { name: "about", link: "/about" },
+  { name: "דף הבית", link: "/" },
+  { name: "צור קשר", link: "/contact" },
+  { name: "אודות", link: "/about" },
 ];
 
 function Navbar() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -114,17 +115,22 @@ function Navbar() {
               component="a"
               href="/"
               sx={{
-                mr: 2,
                 display: { xs: "flex", md: "none" },
                 flexGrow: 1,
-                fontFamily: "monospace",
                 fontWeight: 700,
                 letterSpacing: ".3rem",
                 color: "inherit",
                 textDecoration: "none",
               }}
             >
-              ron<Image alt="Logo" width={40} height={40} src={logo} />gabay
+              רון גבאי
+              <Image
+                className={styles.Navbar_logo}
+                alt="Logo"
+                width={40}
+                height={40}
+                src={logo}
+              />
             </Typography>
             <Box
               sx={{

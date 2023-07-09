@@ -8,7 +8,25 @@ import {
   Card,
   CardContent,
 } from "@mui/material";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 import AlertMessage from "./AlertMessage";
+
+let theme = createTheme({
+  palette: {
+    black: {
+      main: "#000000",
+    },
+    navy: {
+      main: "#262A56",
+    },
+    orange: {
+      main: "#B8621B",
+    },
+    beige: {
+      main: "#E3CCAE",
+    },
+  },
+});
 
 const Form = () => {
   const [showAlert, setShowAlert] = useState(false);
@@ -70,88 +88,94 @@ const Form = () => {
   };
 
   return (
-    <>
-    {showAlert && <AlertMessage message={alertMessage} severity={severity} />}
-    <Card sx={{ maxWidth: 450, margin: "0 auto", padding: "20px 5px" }}>
-      
-      <CardContent>
-        <Typography gutterBottom variant="h5">
-          Contact Us
-        </Typography>
-        <Typography
-          gutterBottom
-          color="textSecondary"
-          variant="body2"
-          component="p"
-        >
-          Fill up the form and our team will get back to you within 24 hours.
-        </Typography>
-        <form onSubmit={handleSubmit}>
-          <Grid container spacing={3}>
-            <Grid item xs={12} sm={12} lg={12}>
-              <TextField
-                value={formData.fullName}
-                onChange={handleInput}
-                fullWidth
-                required
-                name="fullName"
-                id="fullName"
-                label="Full Name"
-                placeholder="Enter Full Name"
-                variant="outlined"
-              />
+    <ThemeProvider theme={theme}>
+      {showAlert && <AlertMessage message={alertMessage} severity={severity} />}
+      <Card
+        sx={{
+          maxWidth: 450,
+          margin: "30px auto",
+          padding: "20px 5px",
+          backgroundColor: "#e3ccae21",
+        }}
+      >
+        <CardContent>
+          <Typography gutterBottom variant="h5">
+            טופס צור קשר
+          </Typography>
+          <Typography
+            gutterBottom
+            color="textSecondary"
+            variant="body2"
+            component="p"
+          >
+            מלא את הטופס והצוות שלנו יחזור אליך תוך 24 שעות.
+          </Typography>
+          <form onSubmit={handleSubmit}>
+            <Grid container spacing={3}>
+              <Grid item xs={12} sm={12} lg={12}>
+                <TextField
+                  value={formData.fullName}
+                  onChange={handleInput}
+                  fullWidth
+                  required
+                  name="fullName"
+                  id="fullName"
+                  label="Full Name"
+                  placeholder="Enter Full Name"
+                  variant="outlined"
+                />
+              </Grid>
+              <Grid item xs={12} sm={12} lg={12}>
+                <TextField
+                  value={formData.email}
+                  onChange={handleInput}
+                  fullWidth
+                  name="email"
+                  type="email"
+                  id="email"
+                  label="Email"
+                  placeholder="Enter Email"
+                  variant="outlined"
+                />
+              </Grid>
+              <Grid item xs={12} sm={12} lg={12}>
+                <TextField
+                  value={formData.phone}
+                  onChange={handleInput}
+                  name="phone"
+                  type="number"
+                  fullWidth
+                  required
+                  id="phone"
+                  label="Phone"
+                  placeholder="Enter Phone Number"
+                  variant="outlined"
+                />
+              </Grid>
+              <Grid item xs={12} sm={12} lg={12}>
+                <TextField
+                  value={formData.message}
+                  onChange={handleInput}
+                  name="message"
+                  fullWidth
+                  multiline
+                  rows={4}
+                  id="message"
+                  label="Message"
+                  placeholder="Enter Your Message"
+                  variant="outlined"
+                />
+              </Grid>
+              <Grid item xs={12} sm={12} lg={12}>
+                <Button type="submit" fullWidth variant="contained" color="orange" sx={{color: "#E3CCAE", fontSize: "1.2rem", fontWeight: "bold"}}>
+                  שלח טופס
+                </Button>
+              </Grid>
             </Grid>
-            <Grid item xs={12} sm={12} lg={12}>
-              <TextField
-                value={formData.email}
-                onChange={handleInput}
-                fullWidth
-                name="email"
-                type="email"
-                id="email"
-                label="Email"
-                placeholder="Enter Email"
-                variant="outlined"
-              />
-            </Grid>
-            <Grid item xs={12} sm={12} lg={12}>
-              <TextField
-                value={formData.phone}
-                onChange={handleInput}
-                name="phone"
-                type="number"
-                fullWidth
-                required
-                id="phone"
-                label="Phone"
-                placeholder="Enter Phone Number"
-                variant="outlined"
-              />
-            </Grid>
-            <Grid item xs={12} sm={12} lg={12}>
-              <TextField
-                value={formData.message}
-                onChange={handleInput}
-                name="message"
-                fullWidth
-                multiline
-                rows={4}
-                id="message"
-                label="Message"
-                placeholder="Enter Your Message"
-                variant="outlined"
-              />
-            </Grid>
-            <Grid item xs={12} sm={12} lg={12}>
-              <Button type="submit" fullWidth variant="contained">
-                Submit
-              </Button>
-            </Grid>
-          </Grid>
-        </form>
-      </CardContent>
-    </Card>
-    </>
+          </form>
+        </CardContent>
+      </Card>
+    </ThemeProvider>
   );
 };
 

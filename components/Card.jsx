@@ -8,9 +8,9 @@ import Image from "next/image";
 
 export default function ActionAreaCard({ cardTitle, cardContent, cardImage }) {
   return (
-    <Card sx={{ maxWidth: 250 }}>
+    <Card sx={{ maxWidth: 250}}>
       <CardActionArea>
-        <Image src={cardImage} alt={cardTitle} width={250} height={250} />
+        <Image src={cardImage} alt={cardTitle} width={240} height={240} />
         <CardContent>
           <Typography
             sx={{

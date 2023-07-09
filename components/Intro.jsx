@@ -5,33 +5,34 @@ import { Container, Box } from "@mui/material";
 import Image from "next/image";
 import bgImg from "../public/images/untitled-91.JPG";
 
-import styles from "@/styles/mainPage.module.css";
+import styles from "@/styles/globals.module.css";
 
 const Intro = () => {
   return (
-    <div style={{ flexGrow: 1 }}>
-      <Container maxWidth={false} disableGutters>
-        <Image className={styles.image} src={bgImg} alt="backgroung image - ron gabay playing" />
-        <Box
-          display="flex"
-          flexDirection="column"
-          justifyContent="center"
-          alignItems="center"
-        >
-          <div className={styles.mainTitle}><h1>The best guitar teacher</h1></div>
-          <div className={styles.secondTitle}><h1>GET STARTED FOR TODAY!</h1></div>
-        </Box>
+    <Container maxWidth={false} disableGutters>
+      <Image
+        className={styles.Intro_image}
+        src={bgImg}
+        alt="backgroung image - ron gabay playing"
+      />
+      <Box
+        display="flex"
+        flexDirection="column"
+        justifyContent="center"
+        alignItems="center"
+      >
+        <div className={styles.Intro_mainTitle}>רון גבאי - מורה פרטי לגיטרה</div>
+        <div className={styles.Intro_secondTitle}>התחילו עוד <span>היום!</span></div>
+      </Box>
 
-        <div className={styles.frame}>
-          <iframe
-            className={styles.video}
-            src="https://www.youtube.com/embed/vLD24dAheyk"
-            title="Video Title"
-          />
-        </div>
-      </Container>
-      <div className={styles.space}></div>
-    </div>
+      <div className={styles.Intro_frame}>
+        <iframe
+          className={styles.Intro_video}
+          src="https://www.youtube.com/embed/koIuco4v7wc"
+          title="Video Title"
+        />
+      </div>
+    </Container>
   );
 };
 

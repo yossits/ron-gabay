@@ -1,5 +1,5 @@
 "use client";
-import { Facebook, Instagram, Twitter } from "@mui/icons-material";
+import { Facebook, Instagram, YouTube } from "@mui/icons-material";
 import * as React from "react";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Box from "@mui/material/Box";
@@ -12,9 +12,7 @@ function Copyright() {
   return (
     <Typography variant="body2" color="white" align="center">
       {"Copyright © "}
-      <Link color="inherit" href="/">
-        Your Website
-      </Link>{" "}
+      yosi.tsaarfati@gmail.com{" "}
       {new Date().getFullYear()}
       {"."}
     </Typography>
@@ -36,51 +34,58 @@ export default function Footer() {
           p: 6,
         }}
       >
-        <Container maxWidth="lg" sx={{ color: "white" }}>
+        <Container maxWidth="lg" sx={{ color: "white", textAlign: "right" }}>
           <Grid container spacing={5}>
             <Grid item xs={12} sm={4}>
               <Link href="/about" sx={{ textDecoration: "none" }}>
                 <Typography variant="h6" color="white" gutterBottom>
-                  About Us
+                  אודות
+                </Typography>
+
+                <Typography variant="body2" color="white">
+                  רון גבאי, מורה לגיטרה מבאר שבע, מצטיין בניסיון של שנים בהוראה
+                  למתחילים ולמתקדמים, כולל גיטרה חשמלית, אקוסטית וקלאסית. מלמד
+                  במגוון סגנונות מרוק ובלוז ועד ג'אז ומזרחית. שיעורים אישיים
+                  וקבוצתיים, היכנסו.
                 </Typography>
               </Link>
-              <Typography variant="body2" color="white">
-                We are XYZ company, dedicated to providing the best service to
-                our customers.
-              </Typography>
             </Grid>
             <Grid item xs={12} sm={4}>
               <Link href="/contact" sx={{ textDecoration: "none" }}>
                 <Typography variant="h6" color="white" gutterBottom>
-                  Contact Us
+                  צור קשר
+                </Typography>
+
+                <Typography variant="body2" color="white">
+                  ממוקם בלב העיר באר שבע
+                </Typography>
+                <Typography variant="body2" color="white">
+                  rongabay1@gmail.com :דואר אלקטרוני
+                </Typography>
+                <Typography variant="body2" color="white">
+                  טלפון: 052-483-2283
                 </Typography>
               </Link>
-              <Typography variant="body2" color="white">
-                123 Main Street, Anytown, USA
-              </Typography>
-              <Typography variant="body2" color="white">
-                Email: info@example.com
-              </Typography>
-              <Typography variant="body2" color="white">
-                Phone: +1 234 567 8901
-              </Typography>
             </Grid>
             <Grid item xs={12} sm={4}>
               <Typography variant="h6" color="white" gutterBottom>
-                Follow Us
+                עקבו אחריי
               </Typography>
-              <Link href="https://www.facebook.com/ron.gabay.50" color="inherit">
-                <Facebook />
+              <Link
+                href="https://www.facebook.com/ron.gabay.50"
+                color="inherit"
+              >
+                <Facebook fontSize="large" />
               </Link>
               <Link
                 href="https://instagram.com/rongabay?igshid=OGQ5ZDc2ODk2ZA=="
                 color="inherit"
                 sx={{ pl: 1, pr: 1 }}
               >
-                <Instagram />
+                <Instagram fontSize="large" />
               </Link>
-              <Link href="https://www.twitter.com/" color="inherit">
-                <Twitter />
+              <Link href="https://www.youtube.com/@RonGabay" color="inherit">
+                <YouTube fontSize="large"/>
               </Link>
             </Grid>
           </Grid>

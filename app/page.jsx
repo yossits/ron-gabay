@@ -1,5 +1,5 @@
 import Intro from "@/components/Intro";
-import MultiCards from "@/components/MultiCards";
+import ImagesSlider from "@/components/ImagesSlider";
 import Accordions from "@/components/Accordions";
 import Form from "@/components/Form";
 import ReadyToGetStarted from "@/components/ReadyToGetStarted";
@@ -8,10 +8,10 @@ export default function Page() {
   return (
     <>
       <Intro />
-      <MultiCards />
+      <ImagesSlider />
       <Accordions />
-      <ReadyToGetStarted/>
-      <Form/>
+      <ReadyToGetStarted />
+      <Form />
     </>
   );
 }

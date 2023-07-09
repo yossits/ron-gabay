@@ -1,0 +1,284 @@
+.Header_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Header_header {
+  width: 100%;
+  position: relative;
+}
+
+.Header_image {
+  width: 100%;
+  height: auto;
+  border-bottom: 5px solid rgb(54, 137, 148);
+  height: 30vh;
+  object-fit: cover;
+}
+
+.Header_title {
+  position: absolute;
+  top: 3%;
+  right: 1%;
+  font-weight: bold;
+  color: #000000da;
+  text-align: right;
+  margin: 0;
+  background-color: #ffffff69;
+}
+
+.AboutUsMainContent_imageMainContent {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.Intro_image {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  padding-bottom: 80px;
+}
+
+.Intro_mainTitle {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #ffffff50;
+  color: #000000;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.Intro_secondTitle {
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #ffffff50;
+  color: #000000;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.Intro_secondTitle span {
+  color: #B8621B;
+}
+
+.Intro_frame {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid rgba(255, 255, 255, 0.767);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.Intro_video {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.ReadyToGetStarted_ready {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: black;
+  height: 150px;
+  color: #B8621B;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.Navbar_logo {
+  margin-right: 10px;
+}
+
+.ImagesSlider_image {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.ImagesSlider_div {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.ImagesSlider_box {
+  max-width: 700px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .Intro_mainTitle {
+    font-size: 2rem;
+    width: 380px;
+    top: 10%;
+  }
+
+  .Intro_secondTitle {
+    font-size: 1.7rem;
+    width: 300px;
+    top: 18%;
+  }
+
+  .Intro_frame {
+    height: 170px;
+    width: 300px;
+    top: 35%;
+  }
+
+  .Intro_image {
+    height: 30vh;
+  }
+
+  .Header_title {
+    font-size: 2rem;
+  }
+
+  .ImagesSlider_box {
+    width: 300px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .Intro_mainTitle {
+    font-size: 2rem;
+    width: 400px;
+    top: 12%;
+  }
+
+  .Intro_secondTitle {
+    font-size: 2rem;
+    width: 300px;
+    top: 22%;
+  }
+
+  .Intro_frame {
+    height: 280px;
+    width: 500px;
+    top: 50%;
+  }
+
+  .Intro_image {
+    height: 50vh;
+  }
+
+  .Header_title {
+    font-size: 3rem;
+  }
+
+  .ImagesSlider_box {
+    width: 500px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .Intro_mainTitle {
+    font-size: 2rem;
+    width: 400px;
+    top: 14%;
+  }
+
+  .Intro_secondTitle {
+    font-size: 2rem;
+    width: 300px;
+    top: 24%;
+  }
+
+  .Intro_frame {
+    height: 340px;
+    width: 600px;
+    top: 50%;
+  }
+
+  .Intro_image {
+    height: 50vh;
+  }
+
+  .Header_title {
+    font-size: 3rem;
+  }
+
+  .ImagesSlider_box {
+    width: 600px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .Intro_mainTitle {
+    font-size: 2.5rem;
+    width: 550px;
+    top: 16%;
+  }
+
+  .Intro_secondTitle {
+    font-size: 2.5rem;
+    width: 400px;
+    top: 24%;
+  }
+
+  .Intro_frame {
+    height: 400px;
+    width: 700px;
+    top: 58%;
+  }
+
+  .Intro_image {
+    height: 60vh;
+  }
+
+  .Header_title {
+    font-size: 4rem;
+  }
+
+  .ImagesSlider_box {
+    width: 700px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .Intro_mainTitle {
+    font-size: 3rem;
+    width: 600px;
+    top: 18%;
+  }
+
+  .Intro_secondTitle {
+    font-size: 3rem;
+    width: 400px;
+    top: 28%;
+
+  }
+
+  .Intro_frame {
+    height: 400px;
+    width: 700px;
+    top: 65%;
+  }
+
+  .Intro_image {
+    height: 70vh;
+  }
+
+  .Header_title {
+    font-size: 4rem;
+  }
+
+  .ImagesSlider_box {
+    width: 700px;
+  }
+}
