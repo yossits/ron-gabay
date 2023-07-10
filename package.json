@@ -19,7 +19,7 @@
     "eslint-config-next": "13.4.5",
     "next": "13.4.5",
     "nodemailer": "^6.9.3",
-    "react": "18.2.0",
+    "react": "^17.0.2",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.45.0",
     "react-swipeable-views": "^0.14.0",
