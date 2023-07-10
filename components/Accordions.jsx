@@ -16,7 +16,7 @@ export default function Accordions() {
   return (
     <Container
       sx={{
-        padding: "40px 60px 80px",
+        padding: "40px 40px 80px",
         borderRadius: "10px",
         marginBottom: "30px",
         width: "100%",
