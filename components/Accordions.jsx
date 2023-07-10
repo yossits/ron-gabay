@@ -19,7 +19,7 @@ export default function Accordions() {
         padding: "40px 60px 80px",
         borderRadius: "10px",
         marginBottom: "30px",
-        width: "70%",
+        width: "100%",
       }}
     >
       <Typography
@@ -38,7 +38,7 @@ export default function Accordions() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography sx={{ width: "90%", flexShrink: 0 }}>
+          <Typography sx={{ flexShrink: 0 }}>
             האם השיעורים מועברים באופן פרטי?
           </Typography>
         </AccordionSummary>
@@ -58,7 +58,7 @@ export default function Accordions() {
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
-          <Typography sx={{ width: "90%", flexShrink: 0 }}>
+          <Typography sx={{ flexShrink: 0 }}>
             כמה שיעורים מספיקים בחודש?
           </Typography>
         </AccordionSummary>
@@ -77,7 +77,7 @@ export default function Accordions() {
           aria-controls="panel2bh-content"
           id="panel2bh-header"
         >
-          <Typography sx={{ width: "90%", flexShrink: 0 }}>
+          <Typography sx={{ flexShrink: 0 }}>
             איפה השיעורים מתקיימים?
           </Typography>
         </AccordionSummary>
@@ -96,7 +96,7 @@ export default function Accordions() {
           aria-controls="panel3bh-content"
           id="panel3bh-header"
         >
-          <Typography sx={{ width: "90%", flexShrink: 0 }}>
+          <Typography sx={{ flexShrink: 0 }}>
             מתאים לכל הגילאים?
           </Typography>
         </AccordionSummary>
@@ -113,7 +113,7 @@ export default function Accordions() {
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
-          <Typography sx={{ width: "90%", flexShrink: 0 }}>
+          <Typography sx={{ flexShrink: 0 }}>
             האם אתה מעביר שיעורים אונליין?
           </Typography>
         </AccordionSummary>

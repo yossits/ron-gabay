@@ -148,6 +148,10 @@
   .ImagesSlider_box {
     width: 300px;
   }
+
+  .ReadyToGetStarted_ready {
+    font-size: 3rem;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
