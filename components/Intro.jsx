@@ -3,7 +3,7 @@ import React from "react";
 import { Container, Box } from "@mui/material";
 
 import Image from "next/image";
-import bgImg from "../public/images/untitled-91.JPG";
+import bgImg from "../public/images/intro.jpeg";
 
 import styles from "@/styles/globals.module.css";
 
