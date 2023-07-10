@@ -120,14 +120,14 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .Intro_mainTitle {
-    font-size: 2rem;
-    width: 380px;
-    top: 10%;
+    font-size: 1.6rem;
+    width: 320px;
+    top: 12%;
   }
 
   .Intro_secondTitle {
-    font-size: 1.7rem;
-    width: 300px;
+    font-size: 1.4rem;
+    width: 180px;
     top: 18%;
   }
 
@@ -200,7 +200,7 @@
   .Intro_frame {
     height: 340px;
     width: 600px;
-    top: 50%;
+    top: 55%;
   }
 
   .Intro_image {
@@ -231,8 +231,8 @@
   }
 
   .Intro_frame {
-    height: 400px;
-    width: 700px;
+    height: 380px;
+    width: 660px;
     top: 58%;
   }
 
@@ -258,7 +258,7 @@
   }
 
   .Intro_secondTitle {
-    font-size: 3rem;
+    font-size: 2.7rem;
     width: 400px;
     top: 28%;
 
