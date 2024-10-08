@@ -12,7 +12,7 @@ function Copyright() {
   return (
     <Typography variant="body2" color="white" align="center">
       {"Copyright © "}
-      yosi.tsaarfati@gmail.com{" "}
+      yosi.tsarfati@gmail.com{" "}
       {new Date().getFullYear()}
       {"."}
     </Typography>
